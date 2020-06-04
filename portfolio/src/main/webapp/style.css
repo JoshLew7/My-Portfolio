@@ -1,9 +1,190 @@
-#content {
-  margin-left: auto;
-  margin-right: auto;
-  width: 650px;
+/*
+Start of Styling 06/01/2020
+ */
+
+/*All of the website is being changed */
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-#greeting-container {
-  margin-top: 20px;
+/* Body styling for the site*/
+
+body{
+  font-family: "Brush Script MT", sans-serif;
+  line-height: 1.4;
+  color: white;
+  overflow-x: hidden;
 }
+
+/*Utility Classes*/
+.container{
+  max-width: 1100px;
+  margin: auto;
+}
+
+.text-primary{
+  color: white;
+}
+
+/*Navigation Bar*/
+#navbar{
+  display: flex;
+  justify-content: space-between;
+  background: #333333; /* Background Color of the full navigation bar*/
+  color: whitesmoke;
+  padding: 1.35rem 8rem;
+  position: sticky;
+  top: 0;
+  z-index: 1; /* Moves Header to the front*/
+  border-bottom: 5px solid goldenrod;
+  font-size: medium;
+}
+
+#navbar ul{
+  display: flex;
+  align-items: center;
+  list-style: none;
+}
+
+#navbar h2 a{ /*Name text*/
+  color: goldenrod;
+  text-decoration: none;
+  font-size: xx-large;
+}
+
+#navbar li a{ /*Header Text (links)*/
+  text-decoration: none;
+  color: white;
+  padding: 1rem;
+  margin: 0 0.5rem;
+  border-radius: 5px;
+  transition: background-color 0.25s;
+  font-size: x-large;
+}
+
+#navbar li a:hover{
+  background-color: blue;
+}
+
+/*Exhibit Section */
+#exhibit{
+  background: url("img/Robo1Cropped.jpg") no-repeat center center /cover;
+  height: 90vh;
+
+}
+
+.exhibit-section{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 81px;
+  left: 0;
+  bottom: 5px;
+  right: 0;
+  background: rgba(0,0,0,0.625);
+  color: white;
+}
+
+.exhibit-section h1{
+  font-size: 4rem;
+  color: goldenrod;
+  margin-bottom: 1.5rem;
+}
+
+.exhibit-section .button{
+  font-size: 2rem;
+  padding: 1rem 10rem;
+  transition: color 0.45s, background 0.45s;
+}
+
+.exhibit-section .button:hover{
+  background: blue;
+  color: white;
+  opacity: 100%; /*TODO Try to get this to only fade the background no the text too,
+                    TODO Add the Header Buttons*/
+}
+
+.button{
+  color: goldenrod;
+  text-decoration: none;
+  display: inline-block;
+  padding: 1rem 2rem;
+  border: 2px solid white;
+  border-radius: 10px;
+}
+
+/*About Section 06/02/2020 */
+
+#about{
+  padding: 5rem 0;
+  background-color: #333333;
+}
+
+#about h2{
+  text-align: center;
+  font-size: 5rem;
+  margin-bottom: 3rem;
+  color: goldenrod;
+}
+
+
+#about .who h3{
+  text-align: left;
+  font-size: 3rem;
+  margin-bottom: 2rem;
+  color: goldenrod;
+}
+
+#about .who p{
+  margin-bottom: 1rem;
+  font-size: 1.25rem;
+  font-family: Calibri, sans-serif;
+}
+
+#about .what h3{
+  text-align: left;
+  font-size: 3rem;
+  margin-bottom: 2rem;
+  color: goldenrod;
+}
+
+#about .what p{
+  margin-bottom: 1rem;
+  font-size: 1.25rem;
+  font-family: Calibri, sans-serif;
+}
+
+#about .why h3{
+  text-align: left;
+  font-size: 3rem;
+  margin-bottom: 2rem;
+  color: goldenrod;
+}
+
+#about .why p{
+  margin-bottom: 1rem;
+  font-size: 1.25rem;
+  font-family: Calibri, sans-serif;
+}
+
+#about .about-content{
+  display: flex;
+}
+
+#about .about-paragraph{
+  text-align: justify;
+}
+
+#about .about-image{
+  display: block;
+  margin-left: 150px;
+  width: 40%;
+  margin-top: 250px;
+}
+
