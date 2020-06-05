@@ -188,3 +188,53 @@ body{
   margin-top: 250px;
 }
 
+/*Projects Section*/
+
+#projects{
+  padding: 5rem 0;
+}
+
+#projects h2{
+  text-align: center;
+  font-size: 5rem;
+  margin-bottom: 3rem;
+  color: goldenrod;
+}
+
+#projects h2 .text-primary{
+  color: #333333;
+}
+
+#projects h3{
+  text-align: center;
+  margin-bottom: 2rem;
+  font-size: 3rem;
+  color: goldenrod;
+
+}
+
+#projects .project-boxes{
+  display: flex;
+}
+
+#projects .project-box{
+  background-color:#333333;
+  flex: 1;
+  padding: 3rem;
+  margin: 2rem 3rem;
+  border-radius: 10px;
+  box-shadow: 2px 2px 5px slategrey;
+  font-size: 1.1rem;
+  color: goldenrod;
+  font-family: Calibri, sans-serif;
+
+}
+
+#projects .project-box i{
+  color: #ffffff;
+  padding: 1rem;
+  border-radius: 50%;
+  margin: 0 1rem;
+
+}
+
