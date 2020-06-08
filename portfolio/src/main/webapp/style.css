@@ -5,24 +5,25 @@ Start of Styling 06/01/2020
 /*All of the website is being changed */
 
 *{
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
 }
 
 /* Body styling for the site*/
 
 body{
+  color: white;
+
   font-family: "Brush Script MT", sans-serif;
   line-height: 1.4;
-  color: white;
   overflow-x: hidden;
 }
 
 /*Utility Classes*/
 .container{
-  max-width: 1100px;
   margin: auto;
+  max-width: 1100px;
 }
 
 .text-primary{
@@ -31,38 +32,39 @@ body{
 
 /*Navigation Bar*/
 #navbar{
-  display: flex;
-  justify-content: space-between;
   background: #333333; /* Background Color of the full navigation bar*/
+  border-bottom: 5px solid goldenrod;
   color: whitesmoke;
+  display: flex;
+  font-size: medium;
+  justify-content: space-between;
   padding: 1.35rem 8rem;
   position: sticky;
   top: 0;
   z-index: 1; /* Moves Header to the front*/
-  border-bottom: 5px solid goldenrod;
-  font-size: medium;
+
 }
 
 #navbar ul{
-  display: flex;
   align-items: center;
+  display: flex;
   list-style: none;
 }
 
 #navbar h2 a{ /*Name text*/
   color: goldenrod;
-  text-decoration: none;
   font-size: xx-large;
+  text-decoration: none;
 }
 
 #navbar li a{ /*Header Text (links)*/
-  text-decoration: none;
-  color: white;
-  padding: 1rem;
-  margin: 0 0.5rem;
   border-radius: 5px;
-  transition: background-color 0.25s;
+  color: white;
   font-size: x-large;
+  margin: 0 0.5rem;
+  padding: 1rem;
+  text-decoration: none;
+  transition: background-color 0.25s;
 }
 
 #navbar li a:hover{
@@ -77,23 +79,24 @@ body{
 }
 
 .exhibit-section{
+  align-items: center;
+  background: rgba(0,0,0,0.625);
+  color: white;
   display: flex;
   flex-direction: column;
-  text-align: center;
-  align-items: center;
   justify-content: center;
   position: absolute;
+  text-align: center;
+
   top: 81px;
   left: 0;
   bottom: 5px;
   right: 0;
-  background: rgba(0,0,0,0.625);
-  color: white;
 }
 
 .exhibit-section h1{
-  font-size: 4rem;
   color: goldenrod;
+  font-size: 4rem;
   margin-bottom: 1.5rem;
 }
 
@@ -111,60 +114,62 @@ body{
 }
 
 .button{
-  color: goldenrod;
-  text-decoration: none;
-  display: inline-block;
-  padding: 1rem 2rem;
   border: 2px solid white;
   border-radius: 10px;
+  color: goldenrod;
+  display: inline-block;
+  padding: 1rem 2rem;
+  text-decoration: none;
 }
 
 /*About Section 06/02/2020 */
 
 #about{
-  padding: 5rem 0;
   background-color: #333333;
+  padding: 5rem 0;
 }
 
 #about h2{
-  text-align: center;
+  color: goldenrod;
   font-size: 5rem;
   margin-bottom: 3rem;
-  color: goldenrod;
+  text-align: center;
 }
 
 
 #about .who h3{
-  text-align: left;
+  color: goldenrod;
   font-size: 3rem;
   margin-bottom: 2rem;
-  color: goldenrod;
+  text-align: left;
 }
 
 #about .who p{
-  margin-bottom: 1rem;
-  font-size: 1.25rem;
   font-family: Calibri, sans-serif;
+  font-size: 1.25rem;
+  margin-bottom: 1rem;
+
 }
 
 #about .what h3{
-  text-align: left;
+  color: goldenrod;
   font-size: 3rem;
   margin-bottom: 2rem;
-  color: goldenrod;
+  text-align: left;
 }
 
 #about .what p{
-  margin-bottom: 1rem;
-  font-size: 1.25rem;
   font-family: Calibri, sans-serif;
+  font-size: 1.25rem;
+  margin-bottom: 1rem;
+
 }
 
 #about .why h3{
-  text-align: left;
+  color: goldenrod;
   font-size: 3rem;
   margin-bottom: 2rem;
-  color: goldenrod;
+  text-align: left;
 }
 
 #about .why p{
@@ -184,8 +189,8 @@ body{
 #about .about-image{
   display: block;
   margin-left: 150px;
-  width: 40%;
   margin-top: 250px;
+  width: 40%;
 }
 
 /*Projects Section*/
@@ -195,10 +200,10 @@ body{
 }
 
 #projects h2{
-  text-align: center;
+  color: goldenrod;
   font-size: 5rem;
   margin-bottom: 3rem;
-  color: goldenrod;
+  text-align: center;
 }
 
 #projects h2 .text-primary{
@@ -206,11 +211,10 @@ body{
 }
 
 #projects h3{
-  text-align: center;
-  margin-bottom: 2rem;
-  font-size: 3rem;
   color: goldenrod;
-
+  font-size: 3rem;
+  margin-bottom: 2rem;
+  text-align: center;
 }
 
 #projects .project-boxes{
@@ -219,22 +223,24 @@ body{
 
 #projects .project-box{
   background-color:#333333;
-  flex: 1;
-  padding: 3rem;
-  margin: 2rem 3rem;
   border-radius: 10px;
   box-shadow: 2px 2px 5px slategrey;
-  font-size: 1.1rem;
   color: goldenrod;
-  font-family: Calibri, sans-serif;
-
+  flex: 1;
+  font-size: 1.1rem;
+  margin: 1rem 3rem;
+  padding: 3rem;
 }
 
 #projects .project-box i{
-  color: #ffffff;
-  padding: 1rem;
   border-radius: 50%;
+  color: white;
   margin: 0 1rem;
+  padding: 1rem;
+}
+
+#projects .project-highlight{
+  font-family: Calibri, sans-serif;
 
 }
 
