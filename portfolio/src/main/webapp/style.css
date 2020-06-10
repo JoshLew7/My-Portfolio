@@ -122,6 +122,8 @@ body{
   text-decoration: none;
 }
 
+
+
 /*About Section 06/02/2020 */
 
 #about{
@@ -229,18 +231,37 @@ body{
   flex: 1;
   font-size: 1.1rem;
   margin: 1rem 3rem;
-  padding: 3rem;
+  padding: 2rem;
 }
 
-#projects .project-box i{
+#projects .project-box p{
   border-radius: 50%;
   color: white;
-  margin: 0 1rem;
-  padding: 1rem;
 }
 
 #projects .project-highlight{
   font-family: Calibri, sans-serif;
+}
+
+.robotics-button{
+  background: goldenrod;
+  border: 2px solid white;
+  border-radius: 10px;
+  color: white;
+  display: inline-block;
+  padding: 1rem 2rem;
+  text-decoration: none;
+}
+
+.pokehood-button{
+  background: goldenrod;
+  border: 2px solid white;
+  border-radius: 10px;
+  color: white;
+  display: inline-block;
+  margin-top: 3rem;
+  padding: 1rem 2rem;
+  text-decoration: none;
 
 }
 
