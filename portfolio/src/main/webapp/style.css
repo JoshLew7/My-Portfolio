@@ -45,6 +45,10 @@ body{
 
 }
 
+ul li ul li{
+  display: none;
+}
+
 #navbar ul{
   align-items: center;
   display: flex;
@@ -243,27 +247,41 @@ body{
   font-family: Calibri, sans-serif;
 }
 
-.robotics-button{
-  background: goldenrod;
-  border: 2px solid white;
-  border-radius: 10px;
-  color: white;
-  display: inline-block;
-  padding: 1rem 2rem;
-  text-decoration: none;
-}
-
 .pokehood-button{
   background: goldenrod;
-  border: 2px solid white;
+  border: 2px solid black;
   border-radius: 10px;
   color: white;
-  display: inline-block;
-  margin-top: 3rem;
-  padding: 1rem 2rem;
+  display: inline;
+  margin-left: 3rem;
+  padding: 1rem 5rem;
   text-decoration: none;
-
+  transition: color 0.45s, background 0.45s;
 }
+
+.robotics-button{
+  background: goldenrod;
+  border: 2px solid black;
+  border-radius: 10px;
+  color: white;
+  display: inline;
+  margin-left: 17.5rem;
+  padding: 1rem 5rem;
+  text-decoration: none;
+  transition: color 0.45s, background 0.45s;
+}
+
+#projects a{
+  font-size: 1.5rem;
+}
+
+#projects .robotics-button:hover, .pokehood-button:hover{
+  background: blue;
+  color: white;
+  opacity: 100%; /*TODO Try to get this to only fade the background no the text too,
+                    TODO Add the Header Buttons*/
+}
+
 
 /* Contact Section */
 
@@ -379,6 +397,11 @@ footer p{
   text-align: center;
 
 }
+
+
+/*PokeHood CSS*/
+
+/*Robotics CSS*/
 
 
 
