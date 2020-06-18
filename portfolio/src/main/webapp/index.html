@@ -26,6 +26,8 @@
     <li><a href="https://github.com/JoshLew7"><i class="fab fa-github"></i></a> </li>
     <li><a href="https://www.linkedin.com/in/joshlew7/"><i class="fab fa-linkedin-in"></i></a> </li>
     <li><a href="https://jlphotography1.smugmug.com/"><i class="fas fa-camera-retro"></i></a> </li>
+    <li> <button onclick="window.location.href='/auth'">Login</button> </li>
+    </li>
   </ul>
 </nav>
 
@@ -138,7 +140,7 @@
             <label for= "message" >Message</label>
             <textarea rows="5" id="message" placeholder="What would you like to say?"></textarea>
           </div>
-          <input type="submit" value="Send Message" class="contact-button">
+          <input type="submit"  onClick="addComment()" value="Send Message" class="contact-button">
         </form>
       </div>
     </div>

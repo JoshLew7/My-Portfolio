@@ -65,3 +65,23 @@ function addQuoteToDom(quote) {
   quoteContainer.innerText = quote;
 }
 
+function addComment() {
+  const username = document.getElementById("comment-username").value;
+  const text = document.getElementById("comment-input").value;
+  fetch(`/data?username=${username}&text=${text}`, { method: "POST" }).then(
+      (res) => {
+        if (res.ok) {
+          rerenderCommentsWithCurrentLimit();
+          document.getElementById("comment-username").value = "";
+          document.getElementById("comment-input").value = "";
+        } else {
+          alert("Error: Enter a valid comment.");
+        }
+      }
+  );
+}
+
+async function deleteComments() {
+  await fetch("/delete-data", { method: "POST" });
+  displayServletContent(0);
+}

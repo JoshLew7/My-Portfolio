@@ -382,6 +382,39 @@ ul li ul li{
   top: -8%;
 }
 
+#special-features h2{
+    font-size: 3rem;
+    margin-bottom: 2rem;
+    text-align: center;
+    color: #333333;
+}
+
+#special-features h2 .text-primary{
+    color: goldenrod;
+}
+
+#special-features .button{
+    color: goldenrod;
+    background: none;
+    cursor: pointer;
+    border: 2px solid #333333;
+    border-radius: 10px;
+    display: inline-block;
+    font-family: "Brush Script MT", sans-serif;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    margin-left: 10%;
+    transition: color 0.45s, background 0.45s;
+    width: 80%;
+
+}
+
+#special-features .button:hover{
+    background: blue;
+    color: white;
+}
+
+
 /* Footer Section */
 .footer-background{
   background: goldenrod;
