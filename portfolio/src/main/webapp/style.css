@@ -72,7 +72,8 @@ ul li ul li{
 }
 
 #navbar li a:hover{
-  background-color: blue;
+  background-color:  #2055DA;
+  /*#00CA9C*/
 }
 
 /*Exhibit Section */
@@ -111,7 +112,7 @@ ul li ul li{
 }
 
 .exhibit-section .button:hover{
-  background: blue;
+  background:  #2055DA;
   color: white;
   opacity: 100%; /*TODO Try to get this to only fade the background no the text too,
                     TODO Add the Header Buttons*/
@@ -276,7 +277,7 @@ ul li ul li{
 }
 
 #projects .robotics-button:hover, .pokehood-button:hover{
-  background: blue;
+  background:  #2055DA;
   color: white;
   opacity: 100%; /*TODO Try to get this to only fade the background no the text too,
                     TODO Add the Header Buttons*/
@@ -346,11 +347,11 @@ ul li ul li{
 }
 
 #contact .contact-button{
-  color: goldenrod;
   background: none;
-  cursor: pointer;
   border: 2px solid #333333;
   border-radius: 10px;
+  color: goldenrod;
+  cursor: pointer;
   display: inline-block;
   font-family: "Brush Script MT", sans-serif;
   font-size: 2rem;
@@ -362,7 +363,7 @@ ul li ul li{
 }
 
 #contact .contact-button:hover{
-  background: blue;
+  background: #2055DA;
   color: white;
 }
 
@@ -382,11 +383,26 @@ ul li ul li{
   top: -8%;
 }
 
+#contact .button{
+  background: #333333;
+  border: 2px solid #333333;
+  border-radius: 10px;
+  color: goldenrod;
+  cursor: pointer;
+  display: inline-block;
+  font-family: "Brush Script MT", sans-serif;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  margin-left: 10%;
+  padding: 0rem;
+  transition: color 0.45s, background 0.45s;
+  width: 80%;}
+
 #special-features h2{
-    font-size: 3rem;
-    margin-bottom: 2rem;
-    text-align: center;
-    color: #333333;
+  color: #333333;
+  font-size: 3rem;
+  margin-bottom: 2rem;
+  text-align: center;
 }
 
 #special-features h2 .text-primary{
@@ -394,11 +410,11 @@ ul li ul li{
 }
 
 #special-features .button{
-    color: goldenrod;
     background: none;
-    cursor: pointer;
     border: 2px solid #333333;
     border-radius: 10px;
+    color: goldenrod;
+    cursor: pointer;
     display: inline-block;
     font-family: "Brush Script MT", sans-serif;
     font-size: 2rem;
@@ -410,7 +426,7 @@ ul li ul li{
 }
 
 #special-features .button:hover{
-    background: blue;
+    background:  #2055DA;
     color: white;
 }
 
@@ -428,7 +444,6 @@ footer p{
   font-family: Arial,sans-serif;
   font-size: 1rem;
   text-align: center;
-
 }
 
 
